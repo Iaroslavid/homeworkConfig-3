@@ -1,0 +1,19 @@
+constants:
+  GREETING: '"Hello, world!"'
+  SERVER_NAME: example.com
+  SERVER_PORT: '80'
+dictionaries:
+- root_directory: '"/var/www/html"'
+  server_name: example.com
+  server_port: '80'
+sections:
+- content: 'listen = 80;
+
+    server_name = example.com;
+
+    root = "/var/www/html";
+
+    location = "/";
+
+    index = "index.html";'
+  name: server

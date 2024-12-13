@@ -1,0 +1,28 @@
+* Это однострочный комментарий
+
+set SERVER_PORT = 80;
+
+
+set SERVER_NAME = "example.com";
+
+
+set GREETING = q(Hello, world!);
+
+/+ 
+Это многострочный 
+комментарий 
++/ 
+
+section server {
+    listen = !{SERVER_PORT};  
+    server_name = !{SERVER_NAME};  
+    root = "/var/www/html";  
+    location = "/";  
+    index = "index.html";  
+}
+
+[ 
+    server_port => !{SERVER_PORT},
+    server_name => !{SERVER_NAME},
+    root_directory => "/var/www/html"
+]

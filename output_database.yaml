@@ -1,0 +1,27 @@
+constants:
+  CONNECTION_TIMEOUT: '30'
+  DB_HOST: localhost
+  DB_NAME: '"my_database"'
+  DB_PASSWORD: password
+  DB_PORT: '5432'
+  DB_USER: admin
+dictionaries:
+- host: localhost
+  name: '"my_database"'
+  password: password
+  port: '5432'
+  timeout: '30'
+  user: admin
+sections:
+- content: 'host = localhost;
+
+    user = admin;
+
+    password = password;
+
+    name = "my_database";
+
+    port = 5432;
+
+    timeout = 30;'
+  name: database

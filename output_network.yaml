@@ -1,0 +1,19 @@
+constants:
+  ALLOWED_IP: 192.168.1.1
+  BLOCKED_PORT: '8080'
+  FIREWALL_MODE: '"strict"'
+  LOGGING_ENABLED: '"true"'
+dictionaries:
+- allowed_ip: 192.168.1.1
+  blocked_port: '8080'
+  logging: '"true"'
+  mode: '"strict"'
+sections:
+- content: 'allow_ip = 192.168.1.1;
+
+    block_port = 8080;
+
+    mode = "strict";
+
+    logging = "true";'
+  name: firewall

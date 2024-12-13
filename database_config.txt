@@ -1,0 +1,25 @@
+* Конфигурация базы данных
+set DB_HOST = "localhost";
+set DB_USER = "admin";
+set DB_PASSWORD = "password";
+set DB_NAME = q(my_database);  
+set DB_PORT = 5432;  
+set CONNECTION_TIMEOUT = 30;  
+
+section database {
+    host = !{DB_HOST};
+    user = !{DB_USER};
+    password = !{DB_PASSWORD};
+    name = !{DB_NAME};  
+    port = !{DB_PORT};  
+    timeout = !{CONNECTION_TIMEOUT};  
+}
+
+[
+    host => !{DB_HOST},
+    user => !{DB_USER},
+    password => !{DB_PASSWORD},
+    name => !{DB_NAME},
+    port => !{DB_PORT},
+    timeout => !{CONNECTION_TIMEOUT}
+]
